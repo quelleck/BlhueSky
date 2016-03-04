@@ -1,0 +1,5 @@
+qhue
+requests
+pysolar
+bluetooth
+python3
