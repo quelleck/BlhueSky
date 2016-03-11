@@ -21,7 +21,7 @@ BlhueSky is a feature filled, customizable python script for controlling Philips
 - Install via pip
 - WeMo switch support
 
-#Installing (before pip install is ready)
+#Installing
 - Make sure you have your pi set to the correct time or else the color temperature of your lights will be off.
 - Clone the repo to your home directory 
 
