@@ -20,3 +20,10 @@ Blhue Sky is a feature filled, customizable python script for controlling Philip
 #Features in Development
 - Install via pip
 - WeMo switch support
+
+#Installing (before pip install is ready)
+- Clone the repo to your home directory (/home/pi/BlhueSky)
+- Copy blhuesky.sh to /etc/init.d/
+- Run this command in the terminal sudo update-rc.d blhuesky.sh defaults
+- Fill out the config.py file with your info and settings
+- Reboot the pi (The service takes about 30 seconds to start after reboot. Lights in the group you selected will flash.)
