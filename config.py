@@ -1,11 +1,5 @@
 # Configuration for Blhue Sky
 
-# (now found automatically)
-# Enter the IP address of your hue bridge
-# within the quotes. Find the bridge IP
-# in your wireless router.
-# hue_bridge_ip = ''
-
 # Enter your Hue bridge user API key within
 # the quotes. Follow instructions here to get your key:
 # http://www.developers.meethue.com/documentation/getting-started
