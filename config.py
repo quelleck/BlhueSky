@@ -5,10 +5,10 @@
 # http://www.developers.meethue.com/documentation/getting-started
 hue_user_key = ''
 
-# Enter the MAC address of the bluetooth device
-# that the Pi will scan for within the quotes. If you have
-# more than one device, separate them with spaces within
-# the quotes.
+# Enter the MAC address of the bluetooth device(s)
+# that the Pi will ping within the quotes. If you have
+# more than one device, separate them with a space within
+# the same quotes.
 # Example: 'AA:BB:CC:DD:EE:FF AB:BC:CD:DE:EF'
 device_mac = ''
 
@@ -26,7 +26,7 @@ ifttt_key = False
 seconds_between_bluetooth_scans_when_away = 20
 
 # Set the seconds between bluetooth scans
-# while you're away here. Default is 180
+# while you're home here. Default is 180
 # seconds.
 seconds_between_bluetooth_scans_when_home = 180
 
@@ -34,21 +34,23 @@ seconds_between_bluetooth_scans_when_home = 180
 # boring_on:
 # Plain old turn the lights on
 # loop_each_on:
-# Fast color loop 10 colors randomly through all lights
+# Fast color loop through all lights
 # ending on the color temp of Sun or default chosen value.
 # random_color_bursts:
 # Random color bursts rotating through all lights twice.
 # police:
+# Flash lights red and blue
 # police_chase:
+# Turn all lights red with bursts of blue
 # Example: 'loop_each_on'
 option = 'loop_each_on'
 
-# Enable sunlight hue adjustments?
+# Enable sunlight color temp adjustments?
 # Default is True.
-# Turn off is False
+# False to turn off.
 sun_tracking = True
 
-# What is the number of the group of
+# What is the group number for the
 # lights you'd like to use? Default is
 # group 0 - all lights. Use instructions here
 # to find your group numbers:
@@ -61,10 +63,11 @@ group_num = 0
 group_to_turn_off = 0
 
 # Enter your longitude and latitude in
-# decimal form. Easy to grab from google maps.
+# decimal form. Easy to grab from google maps,
+# just click on your location.
 # Don't use quotes.
-lon = 41
-lat = -95
+lon = 41.25
+lat = -96
 
 # If you don't want to enable sun tracking
 # choose your default color temp.
