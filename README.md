@@ -49,3 +49,9 @@ sudo pip3 install pysolar
 
 ./lights.py
 - Reboot the pi. Remember BlhueSky sleeps for 30 seconds on boot. Your lights will flash and turn off when it starts.
+
+You can use 
+
+sudo /etc/init.d/blhuesky.sh status/start/stop
+
+to check on the status of, start, or stop the process.
