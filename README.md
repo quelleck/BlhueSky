@@ -24,19 +24,28 @@ BlhueSky is a feature filled, customizable python script for controlling Philips
 #Installing (before pip install is ready)
 - Make sure you have your pi set to the correct time or else the color temperature of your lights will be off.
 - Clone the repo to your home directory 
+
 git clone https://github.com/quelleck/BlhueSky/
 - Copy blhuesky.sh to /etc/init.d/
+
 sudo cp ~/BlhueSky/blhuesky.sh /etc/init.d
 - Run this command to get the script to start when you boot the pi 
+
 sudo update-rc.d blhuesky.sh defaults
 - cd into /BlhueSky and open the config.py file in your preferred text editor
+
 cd Blhuesky
+
 nano config.py
 - Follow the instructions for each config variable. The main items are your Hue API key, the Bluetooth MAC address(s) of your device(s), and your longitude and latitude. If you'd like you can enter your IFTTT API key for push notifications, disable color temp tracking and set a default color temp, choose a different light effect, disable the pi from turning off your lights when you move out of range, choose a specific light group, and change the frequency of bluetooth pair requests.
 - Install the python Hue library 'qhue' (https://github.com/quentinsf/qhue) for python3
+
 sudo pip3 install qhue
 - Install pysolar for tracking the sun
+
+
 sudo pip3 install pysolar
 - Make sure you have all other dependencies by starting BlhueSky from terminal and letting the BlhueSky start. Note: BlhueSky sleeps for 30 seconds to make sure it doesn't start before bluetooth when you boot the pi. You may need to install bluetooth or requests.
+
 ./lights.py
 - Reboot the pi. Remember BlhueSky sleeps for 30 seconds on boot. Your lights will flash and turn off when it starts.
