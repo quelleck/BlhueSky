@@ -46,7 +46,7 @@ sudo pip3 install qhue
 sudo pip3 install pysolar
 - Make sure you have all other dependencies by starting BlhueSky from terminal and letting the BlhueSky start. Note: BlhueSky sleeps for 30 seconds to make sure it doesn't start before bluetooth when you boot the pi. You may need to install bluetooth or requests.
 
-./lights.py
+./blhuesky.py
 - Reboot the pi. Remember BlhueSky sleeps for 30 seconds on boot. Your lights will flash and turn off when it starts.
 
 You can use 
