@@ -17,6 +17,7 @@ BlhueSky is a feature filled, customizable bluetooth proximity controller Philip
 - FOR LARGER LIVING SPACES: Enable/Disable ability to turn off the lights when your device leaves bluetooth range. Very handy if bluetooth doesn't cover your entire living space. Simply use the geofence in the Philips Hue app to turn your lights off when you leave.
 
 #Features in Development
+- More transitions
 - Install via pip
 - WeMo switch support
 
