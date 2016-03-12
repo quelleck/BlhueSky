@@ -1,6 +1,6 @@
 #BlhueSky
 
-BlhueSky is a feature filled, customizable bluetooth proximity controller Philips Hue lights built specifically for a Raspberry Pi.
+BlhueSky is a customizable bluetooth proximity controller for Philips Hue lights built specifically for a Raspberry Pi.
 
 #Features
 - Bluetooth proximity detection to turn lights on/off. Use any bluetooth device, no pairing required.
