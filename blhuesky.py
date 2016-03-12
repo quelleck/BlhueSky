@@ -28,6 +28,8 @@ def arrived_home():
             controls.police(bri_ct_values)
         elif choice == "police_chase":
             controls.police_chase(bri_ct_values)
+        elif choice == "mothership":
+            controls.mothership(bri_ct_values)
     else:
         print("Sun tracking is disabled")
         default = controls.default_on_state(config.manual_ct)
@@ -36,11 +38,13 @@ def arrived_home():
         elif choice == "loop_each_on":
             controls.loop_each_on(default)
         elif choice == "random_color_bursts":
-            controls.random_color_bursts(bri_ct_values)
+            controls.random_color_bursts(default)
         elif choice == "police":
-            controls.police(bri_ct_values)
+            controls.police(default)
         elif choice == "police_chase":
-            controls.police_chase(bri_ct_values)
+            controls.police_chase(default)
+        elif choice == "mothership":
+            controls.mothership(default)
     print("Sleeping for {} seconds".format(
         seconds_between_bluetooth_scans_when_home))
     sleep(seconds_between_bluetooth_scans_when_home)

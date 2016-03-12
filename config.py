@@ -31,19 +31,21 @@ seconds_between_bluetooth_scans_when_away = 20
 seconds_between_bluetooth_scans_when_home = 180
 
 # Set which light transition happens when you arrive.
-# boring_on:
+# 'boring_on'
 # Plain old turn the lights on
-# loop_each_on:
-# Fast color loop through all lights
-# ending on the color temp of Sun or default chosen value.
-# random_color_bursts:
+# 'loop_each_on'
+# Fast color loop.
+# 'random_color_bursts'
 # Random color bursts rotating through all lights twice.
-# police:
-# Flash lights red and blue
-# police_chase:
-# Turn all lights red with bursts of blue
+# 'police'
+# Flash lights red and blue.
+# 'police_chase'
+# Turn all lights blue with bursts of red
+# 'mothership'
+# Loop alternating between cool white and blue.
+# Requires at least 2 lights.
 # Example: 'loop_each_on'
-option = 'loop_each_on'
+option = 'mothership'
 
 # Enable sunlight color temp adjustments?
 # Default is True.
