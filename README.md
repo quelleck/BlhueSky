@@ -1,6 +1,6 @@
 #BlhueSky
 
-BlhueSky is a feature filled, customizable python script for controlling Philips Hue lights built specifically for a Raspberry Pi with bluetooth.
+BlhueSky is a feature filled, customizable bluetooth proximity controller Philips Hue lights built specifically for a Raspberry Pi.
 
 #Features
 - Bluetooth proximity detection to turn lights on/off. Use any bluetooth device, no pairing required.
