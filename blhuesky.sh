@@ -12,7 +12,7 @@
 
 # Change the next 3 lines to suit where you install your script and what you want to call it
 DIR=/home/pi/BlhueSky
-DAEMON=$DIR/lights.py
+DAEMON=$DIR/blhuesky.py
 DAEMON_NAME=BlhueSky
 
 # Add any command line options for your daemon here
