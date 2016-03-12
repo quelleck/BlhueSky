@@ -180,6 +180,27 @@ def police_chase(bri_ct_values):
         length_of_chase -= 1
     groups(config.group_num, 'action', ct=bri_ct_values[1])
 
+
+def mothership(bri_ct_values):
+    print("Mothership chosen in config")
+    notifications.ifttt_post(True)
+    light_list = get_lights_from_group(config.group_num)
+    light_deque = deque(light_list)
+    num_of_lights = how_many_lights()
+    groups(config.group_num, 'action', on=True, ct=50, bri=10)
+    sleep(0.5)
+    while num_of_lights > 0:
+        lights(light_deque[0], 'state', bri=100, hue=46600, sat=254)
+        sleep(0.1)
+        lights(light_deque[0], 'state', bri=100, ct=50)
+        sleep(0.1)
+        light_deque.rotate(-2)
+        num_of_lights -= 1
+    sleep(1)
+    groups(config.group_num, 'action', hue=46600)
+    sleep(3)
+    groups(config.group_num, 'action', transitiontime=20, bri=bri_ct_values[0], ct=bri_ct_values[1])
+
 # INFO -----------------
 
 
