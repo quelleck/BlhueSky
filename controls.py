@@ -194,7 +194,7 @@ def mothership(bri_ct_values):
         sleep(0.1)
         lights(light_deque[1], 'state', bri=100, ct=50)
         sleep(0.1)
-        light_deque.rotate(-2)
+        light_deque.rotate(-3)
         num_of_lights -= 1
     sleep(1)
     groups(config.group_num, 'action', hue=46600)
