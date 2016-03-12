@@ -187,14 +187,13 @@ def mothership(bri_ct_values):
     light_list = get_lights_from_group(config.group_num)
     light_deque = deque(light_list)
     num_of_lights = how_many_lights() * 3
-    groups(config.group_num, 'action', on=True, ct=50, bri=10)
     sleep(1)
     while num_of_lights > 0:
-        lights(light_deque[0], 'state', bri=100, hue=46600, sat=254)
+        lights(light_deque[0], 'state', on=True, bri=100, hue=46600, sat=254)
         sleep(0.1)
-        lights(light_deque[1], 'state', bri=100, ct=50)
+        lights(light_deque[1], 'state', on=True, bri=100, ct=50)
         sleep(0.1)
-        light_deque.rotate(-3)
+        light_deque.rotate(-2)
         num_of_lights -= 1
     sleep(1)
     groups(config.group_num, 'action', hue=46600)
