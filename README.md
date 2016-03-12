@@ -1,5 +1,7 @@
 #BlhueSky
 
+Video preview: http://bit.ly/blhuesky
+
 BlhueSky is a customizable bluetooth proximity and color temperature (think f.lux) controller for Philips Hue lights built specifically for a Raspberry Pi.
 
 #Features
