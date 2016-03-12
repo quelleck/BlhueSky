@@ -65,3 +65,6 @@ to check on the status of, start, or stop the process.
 - Choose send a notification
 - Create and do the same for lights_off
 - Make sure you have the IFTTT app installed on your phone with notifications enabled.
+
+
+contact info: ethan.seyl@gmail.com
