@@ -192,7 +192,7 @@ def mothership(bri_ct_values):
     while num_of_lights > 0:
         lights(light_deque[0], 'state', bri=100, hue=46600, sat=254)
         sleep(0.1)
-        lights(light_deque[0], 'state', bri=100, ct=50)
+        lights(light_deque[1], 'state', bri=100, ct=50)
         sleep(0.1)
         light_deque.rotate(-2)
         num_of_lights -= 1
