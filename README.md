@@ -54,3 +54,14 @@ You can use
 sudo /etc/init.d/blhuesky.sh status/start/stop
 
 to check on the status of, start, or stop the process.
+
+#Using IFTTT
+- After you get your API key from ifttt.com/maker, you'll need to create two recipies.
+- Choose "Create a new recipe"
+- "This" will me "Maker"
+- Choose "Receive web request"
+- Title it lights_on
+- "That" will be IF Notificatons
+- Choose send a notification
+- Create and do the same for lights_off
+- Make sure you have the IFTTT app installed on your phone with notifications enabled.
