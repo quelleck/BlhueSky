@@ -186,9 +186,9 @@ def mothership(bri_ct_values):
     notifications.ifttt_post(True)
     light_list = get_lights_from_group(config.group_num)
     light_deque = deque(light_list)
-    num_of_lights = how_many_lights()
+    num_of_lights = how_many_lights() * 3
     groups(config.group_num, 'action', on=True, ct=50, bri=10)
-    sleep(0.5)
+    sleep(1)
     while num_of_lights > 0:
         lights(light_deque[0], 'state', bri=100, hue=46600, sat=254)
         sleep(0.1)
