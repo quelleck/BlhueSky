@@ -318,8 +318,6 @@ def sun_status(longitude, latitude):
         value = [254, 280]
     elif altitude >= 5 and altitude < 10:
         value = [254, 270]
-    elif altitude >= 5 and altitude < 10:
-        value = [254, 260]
     elif altitude >= 10 and altitude < 20:
         value = [254, 254]
     elif altitude >= 20 and altitude < 30:
