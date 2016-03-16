@@ -12,7 +12,7 @@ import requests
 
 
 def get_bridge_ip():
-    sleep(10)
+    sleep(20)
     meethue_page = requests.get('https://www.meethue.com/api/nupnp').json()
     print("IP address of Bridge: {}".format(meethue_page[0][
         'internalipaddress']))
@@ -195,9 +195,6 @@ def mothership(bri_ct_values):
         sleep(0.1)
         light_deque.rotate(-2)
         num_of_lights -= 1
-    sleep(1)
-    groups(config.group_num, 'action', hue=46600)
-    sleep(3)
     groups(config.group_num, 'action', transitiontime=20, bri=bri_ct_values[0], ct=bri_ct_values[1])
 
 # INFO -----------------
@@ -274,14 +271,14 @@ def lets_check(device_list):
                 stderr=subprocess.STDOUT)
             decode = output.decode("utf-8")
             print(decode)
-            home_ios = re.search("Permission", decode)
-            home_android = re.search("refused", decode)
-            if home_ios or home_android:
-                print("Device Found")
-                return True
-            else:
+            away = re.search("Host", decode)
+            if away:
+                print("Device not found")
                 attempts += 1
-                sleep(3)
+                sleep(1)
+            else:
+                print("Device found")
+                return True
         num_of_devices -= 1
         index += 1
     return False

@@ -98,7 +98,6 @@ def gone():
 
 # -----------------------------------------------------------------------------------------
 
-sleep(20)  # WAIT UNTIL BLUETOOTH STARTS
 controls.blink_group(0)  # STARTUP NOTIFICATION
 infinite_loop = True
 was_i_gone = True
